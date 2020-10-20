@@ -18,6 +18,9 @@ class App extends Component{
           <View style = {styles.box1}></View>
           
         </ScrollView>
+        <View>
+          <Text>PlANETARIO</Text>
+        </View>
        
 
       </View>
