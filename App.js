@@ -7,7 +7,13 @@ class App extends Component{
   render(){
     return(
       <View style = {styles.container}>
+
+        <View style={styles.containerTitulo}>
+          <Text style = {styles.titulo}>Planetário</Text>
+        </View>
+
         <ScrollView showsVerticalScrollIndicator = {false}>
+
           <View style = {styles.box1}></View>
           <View style = {styles.box1}></View>
           <View style = {styles.box1}></View>
@@ -18,11 +24,7 @@ class App extends Component{
           <View style = {styles.box1}></View>
           
         </ScrollView>
-        <View>
-          <Text>PlANETARIO</Text>
-        </View>
-       
-
+        
       </View>
     )
   }
@@ -32,9 +34,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor:"#000133"
-
-    
   },
+
   box1:{
     backgroundColor: '#E4DFDA',
     height: 150,
@@ -43,6 +44,18 @@ const styles = StyleSheet.create({
     margin: 13,
     marginLeft: 30,
   },
+
+  titulo:{
+    marginTop:30,
+    color:'#E4DFDA',
+    fontSize:24,
+    marginBottom:15
+  },
+
+  containerTitulo:{
+    backgroundColor:'#4B006E',
+    alignItems:'center'
+  }
   
 });
 
