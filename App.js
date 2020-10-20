@@ -1,21 +1,46 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {Component} from 'react';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Planetário</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+
+class App extends Component{
+  render(){
+    return(
+      <View style = {styles.container}>
+        <ScrollView showsVerticalScrollIndicator = {false}>
+          <View style = {styles.box1}></View>
+          <View style = {styles.box1}></View>
+          <View style = {styles.box1}></View>
+          <View style = {styles.box1}></View>
+          <View style = {styles.box1}></View>
+          <View style = {styles.box1}></View>
+          <View style = {styles.box1}></View>
+          <View style = {styles.box1}></View>
+          
+        </ScrollView>
+       
+
+      </View>
+    )
+  }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor:"#000133"
+
+    
   },
+  box1:{
+    backgroundColor: '#E4DFDA',
+    height: 150,
+    width: 300,
+    borderRadius: 10,
+    margin: 13,
+    marginLeft: 30,
+  },
+  
 });
+
+export default App;
