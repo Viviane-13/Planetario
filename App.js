@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
 
   containerTitulo:{
     backgroundColor:'#4B006E',
-    alignItems:'center'
+    alignItems:"center"
   }
   
 });
