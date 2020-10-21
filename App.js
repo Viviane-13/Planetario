@@ -1,62 +1,40 @@
-import { StatusBar } from 'expo-status-bar';
-import React, {Component} from 'react';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import React from 'react'
+import {View, Text} from 'react-native'
+import {createDrawerNavigator} from '@react-navigation/drawer'
+import {NavigationContainer} from '@react-navigation/native'
+
+import Home from './src/Home/index.js'
+import TelaSobre from './src/Sobre/index.js'
 
 
-class App extends Component{
-  render(){
-    return(
-      <View style = {styles.container}>
-
-        <View style={styles.containerTitulo}>
-          <Text style = {styles.titulo}>Planetário</Text>
-        </View>
-
-        <ScrollView showsVerticalScrollIndicator = {false}>
-
-          <View style = {styles.box1}></View>
-          <View style = {styles.box1}></View>
-          <View style = {styles.box1}></View>
-          <View style = {styles.box1}></View>
-          <View style = {styles.box1}></View>
-          <View style = {styles.box1}></View>
-          <View style = {styles.box1}></View>
-          <View style = {styles.box1}></View>
-          
-        </ScrollView>
-        
-      </View>
-    )
-  }
+function InicialHome({navigation}){
+  return(
+      <Home/>
+  )
+  
+}
+function Sobre({navigation}){
+  return(
+    <TelaSobre/>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor:"#000133"
-  },
+const Drawer = createDrawerNavigator();
 
-  box1:{
-    backgroundColor: '#E4DFDA',
-    height: 150,
-    width: 300,
-    borderRadius: 10,
-    margin: 13,
-    marginLeft: 30,
-  },
+export default function App(){
+  return(
+    <NavigationContainer>
+      <Drawer.Navigator initialRouteName = 'Home'
+        drawerStyle={{
+          backgroundColor: '#4B006E'
+        }} drawerContentOptions = {{
+          activeTintColor: '#fff'
+        }}
+      >
+        <Drawer.Screen name = 'Home' component = {InicialHome} />
+        <Drawer.Screen name = 'Sobre' component = {Sobre}/>
 
-  titulo:{
-    marginTop:30,
-    color:'#E4DFDA',
-    fontSize:24,
-    marginBottom:15
-  },
-
-  containerTitulo:{
-    backgroundColor:'#4B006E',
-    alignItems:'center'
-  }
-  
-});
-
-export default App;
+      </Drawer.Navigator>
+    </NavigationContainer>
+  )
+}
