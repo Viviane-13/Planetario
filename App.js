@@ -1,17 +1,15 @@
 import React from 'react'
-import {View, Text} from 'react-native'
-import {createDrawerNavigator} from '@react-navigation/drawer'
 import {NavigationContainer} from '@react-navigation/native'
+import {createDrawerNavigator} from '@react-navigation/drawer'
 
-import Home from './src/Home/index.js'
-import TelaSobre from './src/Sobre/index.js'
-
+import Principal from './src/Principal'
+import Home from './src/Home'
+import TelaSobre from './src/Sobre'
 
 function InicialHome({navigation}){
   return(
       <Home/>
-  )
-  
+  ) 
 }
 function Sobre({navigation}){
   return(
@@ -24,17 +22,21 @@ const Drawer = createDrawerNavigator();
 export default function App(){
   return(
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName = 'Home'
+      
+      <Drawer.Navigator initialRouteName = 'Principal'
         drawerStyle={{
-          backgroundColor: '#4B006E'
+          backgroundColor: '#000133'
         }} drawerContentOptions = {{
-          activeTintColor: '#fff'
+          activeTintColor: '#fff',
+          inactiveTintColor: '#fff'
         }}
       >
         <Drawer.Screen name = 'Home' component = {InicialHome} />
         <Drawer.Screen name = 'Sobre' component = {Sobre}/>
+        <Drawer.Screen name = 'Principal' component = {Principal}/>
 
       </Drawer.Navigator>
     </NavigationContainer>
   )
 }
+
