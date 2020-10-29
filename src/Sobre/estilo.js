@@ -19,7 +19,7 @@ const styles =  StyleSheet.create({
     margin: 10,
   },
   containerTitulo:{
-    backgroundColor:'#4B006E',
+    backgroundColor:'#000133',
     alignItems:'center'
   },
   titulo:{

@@ -1,53 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
-import React, {Component} from 'react';
-import { Text, View, ScrollView, Image, ImageBackground } from 'react-native';
-import styles from './estilo'
+import React from 'react';
 
-class App extends Component{
-  render(){
-    return(
-      <View style = {styles.container}>
-         
-        <View style={styles.containerTitulo}>
-        <Text style = {styles.titulo}>Planetário</Text>
-        </View>
-        <ImageBackground source = {require('../assets/background_glitter.jpg')} style = {{width: null, height: null}}>
-          <ScrollView showsVerticalScrollIndicator = {false}>
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-            <View style = {styles.box1}>
-              <Image source={require('../assets/planet_mercury.png')} style={styles.img}/>
-            </View>
-            <View style = {styles.box1}>
-              <Image source={require('../assets/planet_venus.png')} style={{width: 115, height: 115, left: -33,top:  15}}/>    
-            </View>
-            <View style = {styles.box1}>
-               <Image source={require('../assets/planet_terra.png')} style={{width: 115, height: 136, left:-35, top: 8}}/>
-            </View>
-            <View style = {styles.box1}>
-                <Image source={require('../assets/planet_marte.png')} style={{width: 118, height: 114, left: -33, top: 17}}/>  
-            </View>
-            <View style = {styles.box1}>
-              <Image source={require('../assets/planet_jupiter.png')} style={{width: 125, height: 120, left: -40, top: 18}}/>
-            </View>
-            <View style = {styles.box1}>
-              <Image source={require('../assets/planet_saturno.png')} style={styles.img}/>
-            </View>
-          <View style = {styles.box1}>
-            <Image source={require('../assets/planet_urano.png')} style={{width: 120, height: 110, left: -40, top:19}}/>
-          </View>
-          <View style = {styles.box1}>
-            <Image source={require('../assets/planet_netuno.png')} style={{width: 120, height: 110, left: -40, top: 19}}/>
-          </View>
+import Lista from './Lista/index';
+import Mercurio from './Planeta/Mercurio/index';
+import Venus from './Planeta/Venus/index';
+import Terra from './Planeta/Terra/index';
+import Marte from './Planeta/Marte/index';
+import Jupiter from './Planeta/Jupiter/index';
+import Saturno from './Planeta/Saturno/index';
+import Urano from './Planeta/Urano/index';
+import Netuno from './Planeta/Netuno/index';
 
-        </ScrollView>
-        </ImageBackground>
-        
-        
-      </View>
-    )
-  }
+
+const Stack = createStackNavigator();
+
+export default function PlanetaHome(){
+  return(
+    <Stack.Navigator headerMode="none" initialRouteName="Lista" >
+      <Stack.Screen name="Lista" component={Lista} />
+      <Stack.Screen name="Mercurio" component={Mercurio} />
+      <Stack.Screen name="Venus" component={Venus} />
+      <Stack.Screen name="Terra" component={Terra} />
+      <Stack.Screen name="Marte" component={Marte} />
+      <Stack.Screen name="Jupiter" component={Jupiter} />
+      <Stack.Screen name="Saturno" component={Saturno} />
+      <Stack.Screen name="Urano" component={Urano} />
+      <Stack.Screen name="Netuno" component={Netuno} />
+    </Stack.Navigator>
+  );
 }
-
-
-
-export default App;
