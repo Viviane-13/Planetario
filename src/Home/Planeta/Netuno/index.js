@@ -8,10 +8,9 @@ import BotaoVoltar from '../Components/Back';
 
 export default function Planeta({navigation}) {
     return(
-        
         <View style={Styles.container}>
             {/* <AppBar navigation={navigation} /> */}
-
+            <ImageBackground source = {require('../../../assets/background_glitter.jpg')} style = {{width: null, height: null, flex: 1}}>
             <View style={Styles.imagemBG}>
                 <ImageBackground style={{width: 500, height: 300}} source={require("../../../assets/netuno_fundo.jpg")} />
                 <BotaoVoltar navigation={navigation} />
@@ -21,9 +20,8 @@ export default function Planeta({navigation}) {
                 <View style={Styles.circle}>
                     <Image style={Styles.image} source={require("../../../assets/planet_netuno.png")} />
                 </View>
-
-
             </View>
+            </ImageBackground>
         </View>
     );
 };

@@ -25,8 +25,9 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     card: {
+        backgroundColor: 'rgba(255, 255, 255, 0.10)',
         marginTop: 50,
-        backgroundColor: '#FFF',
+        //backgroundColor: '#FFF',
         height: 500,
         width: 370,
         borderRadius: 20,

@@ -37,6 +37,9 @@ const styles = StyleSheet.create({
         marginTop: -55,
         width: 220,
         height: 220
+    },
+   description:{
+        color: '#fff'
     }
 });
 

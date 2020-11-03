@@ -4,17 +4,19 @@ import {StyleSheet} from 'react-native'
 const styles =  StyleSheet.create({
   container:{
     flex: 1,
-    backgroundColor:  '#000133'
+    backgroundColor:  '#000133',
+
   },
   box:{
     width: 300,
     height: 400,
     backgroundColor: 'rgba(255, 255, 255, 0.10)',
     //backgroundColor: '#E4DFDA',
-    margin:30,
-    marginTop:70,
+    marginHorizontal: 55,
+    marginVertical: 90,
     borderRadius: 30,
-    padding:10
+    padding:10,
+    
   },
   text:{
     margin: 10,
