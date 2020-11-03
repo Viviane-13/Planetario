@@ -12,7 +12,7 @@ export default function Inicial({navigation}){
         <Text style = {styles.description}>
       O Sistema Solar é um conjunto de corpos celestes que gravitam na órbita de um sol (uma estrela).  formado por oito planetas, satélites naturais, meteoros e cometas que giram em torno do Sol.
         </Text>
-      <TouchableOpacity style = {styles.btn} onPress = {() => navigation.navigate('Home')}>
+      <TouchableOpacity style = {styles.btn} onPress = {() => navigation.navigate('Home')} >
         <Text style={{color: '#fff'}}>Explorar</Text>
       </TouchableOpacity>
       <Image source = {require('../assets/glowing.png')} style = {{width: 400, height: 220} }/>

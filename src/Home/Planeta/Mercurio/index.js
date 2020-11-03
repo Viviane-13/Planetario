@@ -8,22 +8,26 @@ import BotaoVoltar from '../Components/Back';
 
 export default function Planeta({navigation}) {
     return(
-        
+       
         <View style={Styles.container}>
             {/* <AppBar navigation={navigation} /> */}
-
-            <View style={Styles.imagemBG}>
-                <ImageBackground style={{width: 500, height: 300}} source={require("../../../assets/mercurio_fundo.jpg")} />
-                <BotaoVoltar navigation={navigation} />
-            </View>
-            <View style={Styles.box}>
-                <View style={Styles.card} />
-                <View style={Styles.circle}>
-                    <Image style={Styles.image} source={require("../../../assets/planet_mercury.png")} />
+            <ImageBackground source = {require('../../../assets/background_glitter.jpg')} style = {{width: null, height: null, flex: 1}}>
+                <View style={Styles.imagemBG}>
+                    <ImageBackground style={{width: 500, height: 300}} source={require("../../../assets/mercurio_fundo.jpg")} />
+                    <BotaoVoltar navigation={navigation} />
+                 </View>
+                <View style={Styles.box}>
+                    
+                        <View style={Styles.card} />
+                        <View style={Styles.circle}>
+                        <Image style={Styles.image} source={require("../../../assets/planet_mercury.png")} />
+                        </View>
+                   
                 </View>
+            
 
-
-            </View>
+                </ImageBackground>
+            
         </View>
     );
 };

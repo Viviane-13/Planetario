@@ -9,7 +9,8 @@ const styles =  StyleSheet.create({
   box:{
     width: 300,
     height: 400,
-    backgroundColor: '#E4DFDA',
+    backgroundColor: 'rgba(255, 255, 255, 0.10)',
+    //backgroundColor: '#E4DFDA',
     margin:30,
     marginTop:70,
     borderRadius: 30,
@@ -17,6 +18,8 @@ const styles =  StyleSheet.create({
   },
   text:{
     margin: 10,
+    color: '#E4DFDA',
+    fontSize: 24
   },
   containerTitulo:{
     backgroundColor:'#000133',

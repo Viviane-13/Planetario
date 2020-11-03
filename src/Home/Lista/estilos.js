@@ -8,12 +8,14 @@ const styles = StyleSheet.create({
   },
 
   box1:{
-    backgroundColor: '#E4DFDA',
+    backgroundColor: 'rgba(255, 255, 255, 0.10)',
+    //backgroundColor: '#e4dfda',
     height: 150,
     borderRadius: 20,
     margin: 20,
     marginLeft: 50,
     marginBottom: 7,
+    
   },
 
   titulo:{
