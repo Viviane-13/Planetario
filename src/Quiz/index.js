@@ -1,5 +1,5 @@
 import React from 'react';
-import{View, Text, TouchableOpacity} from 'react-native';
+import{View, Text, TouchableOpacity, ImageBackground} from 'react-native';
 import estilo from './estilo';
 
 
@@ -23,8 +23,8 @@ export default function Quiz(props){
     return(
 
         <View style={estilo.container}>
-
-            <View style={estilo.cardPergunta}>
+        <ImageBackground source = {require('../assets/background_glitter.jpg')} style = {{width: null, height: null, flex: 1}}>
+        <View style={estilo.cardPergunta}>
                 <Text style={estilo.textoPergunta}>Qual o planeta mais próximo do sol?</Text>
             </View>
 
@@ -59,6 +59,9 @@ export default function Quiz(props){
                 </TouchableOpacity>
 
             </View>
+
+        </ImageBackground>
+            
             
         </View>
     )

@@ -28,7 +28,7 @@ const estilo = StyleSheet.create({
     cardRespostas:{
         padding:10,
         marginTop:20,
-        backgroundColor:'#000133',
+        //backgroundColor:'#000133',
         alignItems:'center',
 
         

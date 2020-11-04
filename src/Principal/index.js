@@ -2,10 +2,14 @@
 import React from 'react'
 import {View, Text, StyleSheet, TouchableOpacity, Image, ImageBackground} from 'react-native'
 
+import {useFonts, Aldrich_400Regular} from '@expo-google-fonts/aldrich'
+
 
 export default function Inicial({navigation}){
-  return(
+  
 
+  return(
+    
     <View style = {styles.container}>
       <ImageBackground source = {require('../assets/background_glitter.jpg')} style = {styles.ImgBg}>
         <Text style = {styles.titulo}>EXPLORAÇÃO ESPACIAL</Text>
@@ -44,7 +48,8 @@ const styles = StyleSheet.create({
   },
   description:{
     color: '#fff',
-    marginTop: 70
+    marginTop: 70,
+   // fontFamily: ' Aldrich_400Regular'
   },
   btn:{
     marginTop: 40,

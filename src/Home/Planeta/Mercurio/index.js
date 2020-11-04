@@ -19,7 +19,24 @@ export default function Planeta({navigation}) {
                  </View>
                 <View style={Styles.box}>
                     
-                        <View style={Styles.card} />
+                        <View style={Styles.card}>
+                            <ScrollView>
+                            <Text style = {{color: '#fff', marginTop: 80, padding: 10, fontSize: 18}}>
+                            Mercúrio é o planeta mais próximo ao Sol e o oitavo em tamanho no sistema solar. A distância média é de 57,9 milhões de quilômetros do Sol. É o planeta mais rápido do Sistema Solar, perfazendo 47,87 quilômetros por segundo ao redor do Sol. A superfície é semelhante à da Lua, rochosa e com diversas crateras.
+                            </Text>
+                            <Text style = {{fontWeight: 'bold', color: '#fff', fontSize: 23}}>Curiosidades</Text>
+                        
+                             <Text style = {{color: '#fff',padding: 10, fontSize: 18}}>
+                             Iron Planet -  Por ser constituído basicamente de Ferro.
+                            Pode ser visto da Terra a olho nu - Antes do amanhecer e instante após o anoitecer.
+                            Seu nome foi dado por dois gregos Apolo e Hermes
+                            Planeta mais rápido do Sistema solar e por este motivo foi batizado com o nome de Mercúrio. 
+                            Mercúrio é o deus do comércio, das viagens e da malandragem.
+
+                            </Text>
+                            </ScrollView>
+                           
+                        </View>
                         <View style={Styles.circle}>
                         <Image style={Styles.image} source={require("../../../assets/planet_mercury.png")} />
                         </View>

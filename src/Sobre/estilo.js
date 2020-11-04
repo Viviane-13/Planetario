@@ -5,23 +5,23 @@ const styles =  StyleSheet.create({
   container:{
     flex: 1,
     backgroundColor:  '#000133',
+    justifyContent: 'center',
 
   },
-  box:{
-    width: 300,
-    height: 400,
-    backgroundColor: 'rgba(255, 255, 255, 0.10)',
-    //backgroundColor: '#E4DFDA',
-    marginHorizontal: 55,
-    marginVertical: 90,
-    borderRadius: 30,
-    padding:10,
-    
-  },
-  text:{
+  
+  description:{
+    marginTop: 100,
     margin: 10,
     color: '#E4DFDA',
-    fontSize: 24
+    fontSize: 18,
+    textAlign: 'center'
+  },
+  dev:{
+    color:'#E4DFDA',
+    fontSize: 18,
+    marginRight: 30,
+    margin: 10,
+  
   },
   containerTitulo:{
     backgroundColor:'#000133',

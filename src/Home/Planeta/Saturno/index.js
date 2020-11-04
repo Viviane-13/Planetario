@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, SafeAreaView, ImageBackground, Image} from 'react-native';
+import { View, Text, SafeAreaView, ImageBackground, Image, ScrollView} from 'react-native';
 
 import Styles from './estilos';
 //import AppBar from './components/components';
@@ -17,7 +17,20 @@ export default function Planeta({navigation}) {
                 <BotaoVoltar navigation={navigation} />
             </View>
             <View style={Styles.box}>
-                <View style={Styles.card} />
+                <View style={Styles.card} >
+                <ScrollView>
+                            <Text style = {{color: '#fff', marginTop: 80, padding: 10, fontSize: 18}}>
+                            Saturno é o sexto planeta a partir do Sol, e o segundo maior do sistema solar. O primeiro é Júpiter. É conhecido pelo complexo sistema de anéis formados principalmente por gelo e poeira cósmica e possui 53 luas conhecidas e outras nove em pesquisa.
+
+                            </Text>
+                            <Text style = {{fontWeight: 'bold', color: '#fff', fontSize: 23}}>Curiosidades</Text>
+                        
+                             <Text style = {{color: '#fff',padding: 10, fontSize: 18}}>
+                             
+
+                            </Text>
+                            </ScrollView>
+                </View>
                 <View style={Styles.circle}>
                     <Image style={Styles.image} source={require("../../../assets/planet_saturno.png")} />
                 </View>

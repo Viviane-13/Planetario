@@ -26,11 +26,13 @@ const styles = StyleSheet.create({
     },
     card: {
         marginTop: 50,
-        backgroundColor: '#FFF',
+        backgroundColor: 'rgba(255, 255, 255, 0.10)',
+        //backgroundColor: '#FFF',
         height: 500,
         width: 370,
         borderRadius: 20,
     },
+   
     image: {
         marginTop: -30,
         width: 180,

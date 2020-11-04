@@ -36,6 +36,19 @@ const styles = StyleSheet.create({
     position:'absolute',
     left: -63,
     top: -12
+    },
+    titlePlanet:{
+      textAlign: 'center', 
+      fontSize: 24, 
+      fontWeight: 'bold',
+      color: 'rgba(255, 255, 255, 0.75)'
+    },
+    info:{
+      color: 'rgba(255, 255, 255, 0.75)',
+      textAlign: 'right', 
+      paddingTop: 20,
+      fontSize: 18,
+      paddingRight: 15
     }
 });
 
