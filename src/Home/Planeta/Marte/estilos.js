@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#000133',
+        backgroundColor: '#4B280A',
         flex: 1,
     },
     imagemBG: {
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     },
     card: {
         marginTop: 50,
-        backgroundColor: 'rgba(255, 255, 255, 0.10)',
+        backgroundColor: 'rgba(255, 255, 255, 0.15)',
         //backgroundColor: '#FFF',
         height: 450,
         width: 370,

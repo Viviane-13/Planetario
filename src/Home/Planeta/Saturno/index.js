@@ -11,7 +11,7 @@ export default function Planeta({navigation}) {
         
         <View style={Styles.container}>
             {/* <AppBar navigation={navigation} /> */}
-            <ImageBackground source = {require('../../../assets/background_glitter.jpg')} style = {{width: null, height: null, flex: 1}}>
+           
             <View style={Styles.imagemBG}>
                 <ImageBackground style={{width: 500, height: 300}} source={require("../../../assets/saturno_fundo.png")} />
                 <BotaoVoltar navigation={navigation} />
@@ -37,7 +37,7 @@ export default function Planeta({navigation}) {
 
           
             </View>
-        </ImageBackground>
+       
         </View>
     );
 };

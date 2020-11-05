@@ -2,7 +2,8 @@ import React from 'react'
 import {createDrawerNavigator} from '@react-navigation/drawer'
 import {NavigationContainer} from '@react-navigation/native'
 import {createStackNavigator} from '@react-navigation/stack'
-
+import {AppLoading} from 'expo'
+import {Aldrich_400Regular, useFonts} from '@expo-google-fonts/aldrich'
 
 
 import Home from './src/Home/index.js'
@@ -18,6 +19,12 @@ const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
 
 export default function App(){
+  const [fontsLoaded] = useFonts({
+    Aldrich_400Regular
+  })
+  if(!fontsLoaded){
+    return <AppLoading/>
+  }
   return(
 
     <NavigationContainer >

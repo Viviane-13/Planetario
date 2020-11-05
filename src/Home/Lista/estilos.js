@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     margin: 20,
     marginLeft: 50,
     marginBottom: 7,
-    
+   
   },
 
   titulo:{
