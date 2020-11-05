@@ -45,10 +45,11 @@ const styles = StyleSheet.create({
     },
     info:{
       color: 'rgba(255, 255, 255, 0.75)',
-      textAlign: 'right', 
+      textAlign: 'center', 
       paddingTop: 20,
       fontSize: 18,
-      paddingRight: 15
+      paddingRight: 15,
+      marginLeft: 30
     }
 });
 

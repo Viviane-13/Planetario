@@ -10,7 +10,7 @@ const styles =  StyleSheet.create({
   },
   
   description:{
-    marginTop: 100,
+    marginTop: 200,
     margin: 10,
     color: '#E4DFDA',
     fontSize: 18,

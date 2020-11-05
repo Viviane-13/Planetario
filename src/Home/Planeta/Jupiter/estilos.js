@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
 
         backgroundColor: 'rgba(255, 255, 255, 0.10)',
         //backgroundColor: '#FFF',
-        height: 500,
+        height: 450,
         width: 370,
         borderRadius: 20,
     },

@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         marginTop: 50,
         backgroundColor: 'rgba(255, 255, 255, 0.11)',
         //backgroundColor: '#FFF',
-        height: 500,
+        height: 450,
         width: 370,
         borderRadius: 20,
     },

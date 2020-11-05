@@ -23,8 +23,12 @@ export default function Planeta({navigation}) {
                     Urano é o sétimo planeta a partir do Sol, o terceiro maior do Sistema Solar e foi o primeiro a ser encontrado por meio de um telescópio, pelo astrônomo William Herschel em 1781. Demora 84 anos terrestres para completar uma rotação ao sol. Urano é o nome do deus grego do céu.
                 </Text>
                 
-                <Text style = {{color: '#fff', padding: 10, fontSize: 18}}>
-                
+                <Text style = {{fontWeight: 'bold', color: '#fff', fontSize: 23, textAlign: 'center'}}>Curiosidades</Text>
+                <Text style = {{color: '#fff', padding: 10, fontSize: 18, textAlign: 'center'}}>
+                Urano tem pelo menos 27 luas.
+                Terceiro maior planeta do sistema solar.
+                Seu nome foi dado em homenagem ao Deus grego Urano
+
                 </Text>
                     </ScrollView>
                 </View>

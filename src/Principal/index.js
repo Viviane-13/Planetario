@@ -18,7 +18,7 @@ export default function Inicial({navigation}){
       <TouchableOpacity style = {styles.btn} onPress = {() => navigation.navigate('Home')} >
         <Text style={{color: '#fff', fontFamily: 'Aldrich_400Regular', fontSize: 20}}>Explorar</Text>
       </TouchableOpacity>
-      <Image source = {require('../assets/glowing.png')} style = {{width: 500, height: 240, paddingHorizontal: 0, resizeMode: 'stretch'} }/>
+      <Image source = {require('../assets/glowing.png')} style = {{width: 500, height: 200, paddingHorizontal: 0, resizeMode: 'stretch'} }/>
       </ImageBackground>
   
  
@@ -40,7 +40,8 @@ const styles = StyleSheet.create({
     fontSize: 34,
     marginHorizontal: 15,
     marginTop: 100,
-    fontFamily: 'Aldrich_400Regular'
+    fontFamily: 'Aldrich_400Regular',
+    lineHeight: 50
   },
   description:{
     color: '#fff',
@@ -48,10 +49,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     fontFamily: 'Aldrich_400Regular',
     fontSize: 15,
-   
+    lineHeight: 20,
+    
   },
   btn:{
-    marginTop: 40,
+    marginTop: 60,
     borderRadius: 30,
     width: 120,
     alignItems: 'center',

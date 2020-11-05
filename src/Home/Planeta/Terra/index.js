@@ -19,11 +19,11 @@ export default function Planeta({navigation}) {
             <View style={Styles.box}>
                 <View style={Styles.card}>
                 <ScrollView>
-                    <Text style = {{color: '#fff', marginTop: 80, padding: 10, fontSize: 18}}>
+                    <Text style = {{color: '#fff', marginTop: 100, padding: 10, fontSize: 18, textAlign: 'center'}}>
                     O Planeta Terra é o terceiro dos oito planetas que fazem parte do Sistema Solar. Também conhecido como "Planeta Azul", recebe essa denominação posto que grande parte do planeta é formado por água.
                 </Text>
-                <Text style = {{fontWeight: 'bold', color: '#fff', fontSize: 23}}>Curiosidades</Text>
-                <Text style = {{color: '#fff', padding: 10, fontSize: 18}}>
+                <Text style = {{fontWeight: 'bold', color: '#fff', fontSize: 23, textAlign: 'center'}}>Curiosidades</Text>
+                <Text style = {{color: '#fff', padding: 10, fontSize: 18, textAlign: 'center'}}>
                 A Baía de Hudson, no Canadá possui uma anomalia que faz com que a gravidade seja menor que no resto do planeta.
 
                 </Text>
