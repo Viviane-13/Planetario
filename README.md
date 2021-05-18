@@ -1,6 +1,10 @@
 # Planetario
 
 Projeto desenvolvido para disciplina de programação para dispositivos móveis. O mesmo tem o intuito educativo e informativo sobre os planetas do nosso sistema solar.
+Tecnologias utilizadas:
+<ul>
+     <li>React Native</li>
+</ul>
 
 <h3>Tela inicial</h3>
 <p></p>
